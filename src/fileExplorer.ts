@@ -368,7 +368,7 @@ export class FileSystemProvider implements vscode.TreeDataProvider<Entry>, vscod
 		 const data = contextStr + dmnStr  + '</dmn:definitions>"}';
 
 		const options = {
-			hostname : '0.0.0.0',
+			hostname : '127.0.0.1',
 			port: 8080,
 			path: '/jitdmn',
 			method: 'POST',
