@@ -1,8 +1,8 @@
 {
-	"name": "dmn-explorer",
+	"name": "dmn-explorer-bundle",
 	"displayName": "DMN Explorer",
 	"description": "Navigate, search, validate DMNs",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "rhettss",
 	"license": "FREE",
 	"icon": "resources/icon.png",

@@ -382,7 +382,7 @@ export class FileSystemProvider implements vscode.TreeDataProvider<Entry>, vscod
 			
 			res.on('data', d => {
 			  process.stdout.write(d)
-			  orange.appendLine('bodyResponse: ' + d);
+			  orange.appendLine('bodyResponse-127: ' + d);
 			});
 		  });
 		  
@@ -465,7 +465,7 @@ export class FileExplorer {
 		const https = require('http');
 		const data =   fileData;
 		const options = {
-			hostname : '0.0.0.0',
+			hostname : '127.0.0.1',
 			port: 8080,
 			path: '/jitdmn/validate',
 			method: 'POST',
@@ -477,7 +477,7 @@ export class FileExplorer {
 		const req = https.request(options, res => {
 			res.on('data', d => {
 				process.stdout.write(d)
-				orange.appendLine('bodyResponse: ' + d);
+				orange.appendLine('bodyResponse-127: ' + d);
 			});
 				});
 				
